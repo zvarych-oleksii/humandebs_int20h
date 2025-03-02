@@ -1,0 +1,54 @@
+.formField {
+    width: 100%;
+    display: flex;
+}
+
+.formField__type--inline {
+    gap: 16px;
+    align-items: center;
+}
+
+.formField__type--inline .formField__desc {
+    display: none;
+}
+
+.formField__type--default {
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.formField__label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+.formField__label::first-letter {
+    text-transform: uppercase;
+}
+
+.formField__desc {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: inherit;
+    line-height: 20px;
+    color: rgba(113, 113, 122, 1);
+}
+
+.formField__error {
+    color: rgb(158, 44, 44);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: inherit;
+    line-height: 20px;
+    min-height: 20px;
+    width: 100%;
+    display: inline-block;
+}
+
+.formField__error::first-letter {
+    text-transform: uppercase;
+}

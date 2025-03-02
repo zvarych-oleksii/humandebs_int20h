@@ -1,0 +1,25 @@
+.button {
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.button--loading {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: wait;
+}
+
+.button--disabled {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: not-allowed;
+}

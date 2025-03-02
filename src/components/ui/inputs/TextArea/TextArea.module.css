@@ -1,0 +1,52 @@
+.textArea {
+    width: 100%;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    background: none;
+    border: 1px solid rgba(228, 228, 231, 1);
+    border-radius: 6px;
+    resize: none;
+}
+
+.textArea--disabled {
+    cursor: not-allowed;
+    opacity: 50%;
+}
+
+.textArea__modify--default:focus {
+    outline-offset: 2px;
+    outline: 2px solid rgba(161, 161, 170, 1);
+}
+
+.textArea__modify--new-york {
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.textArea__modify--new-york:focus {
+    outline: 1px solid rgba(161, 161, 170, 1);
+}
+
+.textArea--error {
+    border-color: rgba(239, 68, 68, 1);
+}
+
+.textArea--error:focus {
+    outline-color: rgba(239, 68, 68, 0.8);
+}
+
+.textArea--error.textArea__modify--new-york:focus {
+    box-shadow: 0px 1px 2px 0px rgba(239, 68, 68, 0.8);
+}
+
+.textArea::placeholder {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    color: rgba(113, 113, 122, 1);
+    font-family: "Inter", sans-serif;
+    text-transform: capitalize;
+}
